@@ -7,7 +7,7 @@
         <a class="fl" href="javascript:void(0);">联系我们</a>
         <img class="qr-code fl" src="./../../assets/images/1570068695.png">
       </div>
-      <div class="fr company">Copyright 2019 HYJC官网 版权所有 京ICP备13048349号-1</div>
+      <div class="fr company">Copyright 2019 HYJC官网 版权所有 苏ICP备******号-1</div>
     </div>
   </header>
 </template>
@@ -15,7 +15,7 @@
   .footer {
     width: 100%;
     background-color #373b41;
-    padding: 10px;
+    padding: 10px 0;
 
     .company {
       color #c3c7cd;

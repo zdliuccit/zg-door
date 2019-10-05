@@ -164,6 +164,7 @@
         line-height: 80px;
         height: 80px;
         cursor: pointer;
+        user-select none;
       }
 
       .menu-li {
