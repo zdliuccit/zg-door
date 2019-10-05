@@ -46,6 +46,7 @@
       height 18px;
       color #000;
       font-size 14px;
+      padding 0 20px;
       padding-bottom 12px;
 
       a {
