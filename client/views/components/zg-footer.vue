@@ -1,5 +1,5 @@
 <template>
-  <header class="footer">
+  <footer class="footer">
     <div class="container h40">
       <div class="footer-menu fl">
         <a @click="$router.push('jobs')" class="fl" href="javascript:void(0);">人才招聘</a>
@@ -9,13 +9,15 @@
       </div>
       <div class="fr company">Copyright 2019 HYJC官网 版权所有 苏ICP备******号-1</div>
     </div>
-  </header>
+  </footer>
 </template>
 <style lang="stylus" scoped>
   .footer {
     width: 100%;
     background-color #373b41;
     padding: 10px 0;
+    height 60px;
+    box-sizing border-box;
 
     .company {
       color #c3c7cd;

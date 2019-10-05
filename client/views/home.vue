@@ -18,7 +18,7 @@
             <div class="news-date fr">2019-09-09</div>
           </li>
         </ul>
-        <div class="more-warp"><i class="iconfont icon-more fr"></i></div>
+        <div class="more-warp"><i @click="$router.push('news')" class="iconfont icon-more fr"></i></div>
       </div>
       <zg-title title="业务介绍"></zg-title>
       <div class="business container">
@@ -48,7 +48,7 @@
             <img class="bu-li-img fr" src="http://47.99.66.195/zg/03.jpg">
           </li>
         </ul>
-        <div class="more-warp"><i class="iconfont icon-more fr"></i></div>
+        <div class="more-warp"><i @click="$router.push('business-intro')" class="iconfont icon-more fr"></i></div>
       </div>
       <zg-title title="信息咨询"></zg-title>
       <div class="info-consult container">
@@ -78,7 +78,7 @@
             </div>
           </li>
         </ul>
-        <div class="more-warp"><i class="iconfont icon-more fr"></i></div>
+        <div class="more-warp"><i @click="$router.push('info-consult')" class="iconfont icon-more fr"></i></div>
       </div>
     </div>
   </div>
@@ -113,7 +113,7 @@
       height 18px;
       color #000;
       font-size 14px;
-      margin-bottom 10px;
+      padding-bottom 12px;
 
       a {
         color #333;
@@ -121,8 +121,8 @@
     }
 
     .news-title {
-      height 40px;
-      line-height 40px;
+      height 50px;
+      line-height 50px;
       font-size 18px;
       color #333;
 
@@ -180,47 +180,48 @@
   .info-consult {
     overflow hidden;
     padding-bottom 30px;
-  }
 
-  .ic-ul {
-    margin-left: -20px;
-    margin-right -20px;
+    .ic-ul {
+      margin-left: -20px;
+      margin-right -20px;
 
-    .info-words {
-      font-size 12px;
-      color #333;
-      word-break break-all;
-      padding: 10px;
-      height 74px;
-      overflow hidden;
-    }
+      .info-words {
+        font-size 12px;
+        color #333;
+        word-break break-all;
+        padding: 10px;
+        height 74px;
+        overflow hidden;
+      }
 
-    li {
-      float left;
-      width 25%;
-      padding: 20px;
-      overflow hidden;
-      box-sizing border-box;
-      height 210px;
+      li {
+        float left;
+        width 25%;
+        padding: 20px;
+        overflow hidden;
+        box-sizing border-box;
+        height 210px;
 
-      .info-warp {
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-        transition: box-shadow .3s;
+        .info-warp {
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+          transition: box-shadow .3s;
 
-        .info-img {
-          width 100%;
+          .info-img {
+            width 100%;
+          }
+        }
+
+        .info-warp:hover {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
         }
       }
+    }
 
-      .info-warp:hover {
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-      }
+    .ic-ul:after {
+      clear both;
+      content: '';
+      display block
     }
   }
 
-  .ic-ul:after {
-    clear both;
-    content: '';
-    display block
-  }
 </style>

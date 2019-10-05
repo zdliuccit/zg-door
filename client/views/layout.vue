@@ -29,6 +29,12 @@
   }
 
   .door-body {
-    min-height: calc(100% - 80px);
+    min-height: calc(100% - 60px);
+  }
+
+  .door-body:after {
+    content '';
+    display block;
+    clear both;
   }
 </style>
