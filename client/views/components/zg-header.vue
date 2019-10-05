@@ -1,15 +1,11 @@
 <template>
   <header class="header">
     <div class="container h80">
-      <div class="logo fl">HYJC官网</div>
+      <div class="logo fl" @click="$router.push('/')">HYJC官网</div>
       <ul class="menu fr h72">
-        <li class="menu-li fl"><a>公司简介</a></li>
-        <li class="menu-li fl"><a>新闻动态</a></li>
-        <li class="menu-li fl"><a>信息咨询</a></li>
-        <li class="menu-li fl"><a>业务介绍</a></li>
-        <li class="menu-li fl"><a>系统链接</a></li>
-        <li class="menu-li fl"><a>人才招聘</a></li>
-        <li class="menu-li fl"><a>联系我们</a></li>
+        <li @click="goToUrl(mm.url)" class="menu-li fl" :class="menuClass(mm.url)"
+            v-for="(mm,index) in list" :key="index"><a>{{mm.name}}</a>
+        </li>
         <li class="fl icon-li">
           <i @click="showDialog(1)" class="iconfont icon-weixin" style="color: #00bb0a;"></i>
           <div class="dg-warp" v-show="wxStatus">
@@ -35,6 +31,15 @@
   export default {
     data() {
       return {
+        list: [
+          { url: 'about-us', name: '公司简介' },
+          { url: 'news', name: '新闻动态' },
+          { url: 'info-consult', name: '信息咨询' },
+          { url: 'business-intro', name: '业务介绍' },
+          { url: 'system-link', name: '系统链接' },
+          { url: 'jobs', name: '人才招聘' },
+          { url: 'contact-us', name: '联系我们' },
+        ],
         status: false,
         wxStatus: false,
         i18nStatus: false,
@@ -42,6 +47,12 @@
       }
     },
     methods: {
+      menuClass(val) {
+        return this.$route.path.indexOf(val) > -1 ? 'active' : ''
+      },
+      goToUrl(url) {
+        if (url) this.$router.push(url)
+      },
       closeDialog() {
         this.status = false
         this.wxStatus = false
@@ -189,6 +200,7 @@
       a {
         color #555;
         font-size 14px;
+        text-decoration: none;
       }
 
     }
@@ -197,6 +209,7 @@
       font-size: 34px;
       line-height: 80px;
       color: #29333a;
+      cursor pointer;
     }
 
     .h80 {

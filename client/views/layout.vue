@@ -20,9 +20,12 @@
 </script>
 <style lang="stylus" scoped>
   .door {
-    position: relative;
+    position: absolute;
     height: 100%;
+    width: 100%;
     padding-top: 80px;
+    top: 0;
+    left 0;
   }
 
   .door-body {

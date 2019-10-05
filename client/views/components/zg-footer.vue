@@ -2,9 +2,9 @@
   <header class="footer">
     <div class="container h40">
       <div class="footer-menu fl">
-        <a class="fl" href="javascript:void(0);">人才招聘</a>
-        <a class="fl" href="javascript:void(0);">系统链接</a>
-        <a class="fl" href="javascript:void(0);">联系我们</a>
+        <a @click="$router.push('jobs')" class="fl" href="javascript:void(0);">人才招聘</a>
+        <a @click="$router.push('system-link')" class="fl" href="javascript:void(0);">系统链接</a>
+        <a @click="$router.push('contact-us')" class="fl" href="javascript:void(0);">联系我们</a>
         <img class="qr-code fl" src="./../../assets/images/1570068695.png">
       </div>
       <div class="fr company">Copyright 2019 HYJC官网 版权所有 苏ICP备******号-1</div>

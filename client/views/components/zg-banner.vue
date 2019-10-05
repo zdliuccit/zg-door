@@ -38,6 +38,10 @@
     mounted() {
       if (process.env.VUE_ENV !== 'server') this.initBanner()
     },
+    destroyed() {
+      clearTimeout(this.timeFunc)
+      this.timeFunc = null
+    },
     methods: {
       handleMouseEnter() {
         clearTimeout(this.timeFunc)
