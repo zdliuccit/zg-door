@@ -3,7 +3,22 @@
     <zg-banner></zg-banner>
     <div class="home-body">
       <div class="news container">
-        <div class="news-title">新闻动态</div>
+        <div class="news-title"><i class="iconfont icon-news fl"></i>新闻动态</div>
+        <ul class="news-ul">
+          <li class="news-li">
+            <a href="javascript:void(0);" class="news-word fl">安全稳定，全网互通 大数据分析，共建物联网生态安全稳定</a>
+            <div class="news-date fr">2019-09-09</div>
+          </li>
+          <li class="news-li">
+            <a href="javascript:void(0);" class="news-word fl">安全稳定，全网互通 大数据分析，共建物联网生态安全稳定</a>
+            <div class="news-date fr">2019-09-09</div>
+          </li>
+          <li class="news-li">
+            <a href="javascript:void(0);" class="news-word fl">安全稳定，全网互通 大数据分析，共建物联网生态安全稳定</a>
+            <div class="news-date fr">2019-09-09</div>
+          </li>
+        </ul>
+        <div class="more-warp"><i class="iconfont icon-more fr"></i></div>
       </div>
       <zg-title title="业务介绍"></zg-title>
       <div class="business container">
@@ -33,6 +48,7 @@
             <img class="bu-li-img fr" src="http://47.99.66.195/zg/03.jpg">
           </li>
         </ul>
+        <div class="more-warp"><i class="iconfont icon-more fr"></i></div>
       </div>
       <zg-title title="信息咨询"></zg-title>
       <div class="info-consult container">
@@ -62,6 +78,7 @@
             </div>
           </li>
         </ul>
+        <div class="more-warp"><i class="iconfont icon-more fr"></i></div>
       </div>
     </div>
   </div>
@@ -89,6 +106,33 @@
   }
 </script>
 <style lang="stylus" scoped>
+  .news {
+    padding-top 10px;
+
+    .news-li {
+      height 18px;
+      color #000;
+      font-size 14px;
+      margin-bottom 10px;
+
+      a {
+        color #333;
+      }
+    }
+
+    .news-title {
+      height 40px;
+      line-height 40px;
+      font-size 18px;
+      color #333;
+
+      .icon-news {
+        color red;
+        margin-right: 2px;
+      }
+    }
+  }
+
   .business {
     overflow hidden;
 
@@ -108,7 +152,7 @@
 
         p {
           font-size 16px;
-          color #555;
+          color #333;
           text-indent 32px;
           line-height: 25px;
         }

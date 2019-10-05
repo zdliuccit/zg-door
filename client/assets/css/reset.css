@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 sup {
@@ -89,4 +89,15 @@ div {
 
 .fl {
   float: left;
+}
+
+.more-warp {
+  height: 26px;
+}
+
+.more-warp .icon-more {
+  font-size: 26px;
+  color: #333;
+  line-height: 1;
+  cursor: pointer;
 }
