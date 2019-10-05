@@ -30,6 +30,7 @@
 
   .door-body {
     min-height: calc(100% - 60px);
+    position: relative;
   }
 
   .door-body:after {

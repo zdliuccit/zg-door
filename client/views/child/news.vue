@@ -40,13 +40,13 @@
 </script>
 <style lang="stylus" scoped>
   .news {
-    padding-top 10px;
+    padding-top 16px;
 
     .news-li {
       height 18px;
       color #000;
       font-size 14px;
-      padding 0 20px;
+      padding 0 35px;
       padding-bottom 12px;
 
       a {
