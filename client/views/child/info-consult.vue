@@ -1,5 +1,6 @@
 <template>
   <div class="info-consult container">
+    <div class="news-title"><i class="iconfont icon-zixun fl"></i>信息介绍</div>
     <ul class="ic-ul">
       <li class="ic-ul-li">
         <div class="info-warp">

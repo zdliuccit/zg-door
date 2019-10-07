@@ -29,7 +29,7 @@
 </script>
 <style lang="stylus" scoped>
   .jobs {
-    padding-top 16px;
+    padding-top 20px;
   }
 
   .jobs-ul {
@@ -53,17 +53,6 @@
     }
   }
 
-  .news-title {
-    height 50px;
-    line-height 50px;
-    font-size 18px;
-    color #333;
-
-    .icon-recruit {
-      color red;
-      margin-right: 2px;
-    }
-  }
 
   .jobs-bg {
     position: absolute;

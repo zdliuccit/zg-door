@@ -2,6 +2,7 @@
   <div class="cu-body">
     <div class="concat-us-bg"></div>
     <div class="container concat-us">
+      <div class="news-title"><i class="iconfont icon-lianxi fl"></i>联系我们</div>
       <img class="cus-img fl" src="./../../assets/images/concat-us.png">
       <div class="c-info">
         <h1>HYJC***有限公司</h1>
@@ -37,7 +38,7 @@
   }
 
   .concat-us {
-    padding: 50px 100px;
+    padding: 20px 100px 50px;
   }
 
   .cus-img {

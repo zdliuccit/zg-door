@@ -101,3 +101,20 @@ div {
   line-height: 1;
   cursor: pointer;
 }
+
+.news-title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #333;
+}
+
+.news-title .iconfont {
+  color: red;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.ic-ul-li {
+  cursor: pointer;
+}

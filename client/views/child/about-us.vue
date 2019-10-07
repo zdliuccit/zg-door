@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="container about-us">
+    <div class="news-title"><i class="iconfont icon-jieshao fl"></i>公司简介</div>
   </div>
 </template>
 <script>
@@ -8,4 +9,7 @@
   }
 </script>
 <style lang="stylus" scoped>
+  .about-us {
+    padding-top 20px;
+  }
 </style>
